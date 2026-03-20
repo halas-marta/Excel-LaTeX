@@ -1,0 +1,69 @@
+%!TeX TxS-program:compile =txs:///pythontex
+\documentclass{mwart}
+\usepackage[utf8]{inputenc}
+\usepackage{polski}
+\usepackage{pythontex}
+\usepackage{graphicx}
+\usepackage{pgf}
+\usepackage{lmodern,microtype}
+\usepackage{amsfonts}
+\usepackage{float}
+
+\addtolength{\topmargin}{-1cm}
+\addtolength{\oddsidemargin}{-2cm}
+\addtolength{\textwidth}{4cm}
+\addtolength{\textheight}{0cm}
+
+\def \R{\mathbb{R}}
+
+\author{Marta Hałas 282264}
+\title{\textbf{Lista 2}}
+
+\begin{document}
+	\maketitle
+	\medskip
+	
+	\section{\textbf{Zadanie 1}}\label{Zadanie 1}
+	
+	\begin{pysub}
+		
+		Skoczek pustynny Alfred w tym stanie nie trafi do swojego domu, ani też nie będzie nocował pod gołym niebem. Będzie on nocował pod dachem swojego kolegi, aby tam dotrzeć musi wykonać po wyjściu z baru 3 kroki w przód o długości 2.28m i 3 kroki wstecz o długości 84cm.
+		
+	\end{pysub}
+	
+	
+	\section{\textbf{Zadanie 2}}\label{Zadanie 2}
+
+	
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=15cm]{WYKRES2LISTASTOP.png}
+			\caption{Wykres: Czas działania implementacji dla różnych wartości parametrów ${n\choose k}$}
+		\end{center}
+	\end{figure}
+
+	\medskip
+
+	\begin{pysub}
+	
+		Najszybszą implementacją okazała się Newton silnia, drugie miejsce zajęła Newton rekurencja. Natomiast najwolniejsza okazała się Newton iteracja.
+		 
+	\end{pysub}
+	
+	
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=15cm]{2opcja2wykees.png}
+			\caption{Wykres: Czas działania implementacji dla różnych wartości parametrów ${n\choose k}$}
+		\end{center}
+	\end{figure}
+	
+	\medskip
+	
+	\begin{pysub}
+		
+		Najszybszą implementacją okazała się Newton silnia, drugie miejsce zajęła Newton iteracja, chociaż dla n mniejszych od 9 była najwolniejsza. Newton rekurencja dla n większego od 9 okazała się najwolniejsza. Dla n mniejszych od 7 Newton reukrencja konkurowała z implementacją Newton silnia. Dla n=7, n=8, n=9 drugą najszybszą implementacją była implementacja Newton rekurencja.
+		
+	\end{pysub}
+	
+\end{document}

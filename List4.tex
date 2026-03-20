@@ -1,0 +1,50 @@
+%!TeX TxS-program:compile =txs:///pythontex
+\documentclass{mwart}
+\usepackage[utf8]{inputenc}
+\usepackage{polski}
+\usepackage{pythontex}
+\usepackage{graphicx}
+\usepackage{pgf}
+\usepackage{lmodern,microtype}
+\usepackage{amsfonts}
+\usepackage{float}
+
+\addtolength{\topmargin}{-1cm}
+\addtolength{\oddsidemargin}{-2cm}
+\addtolength{\textwidth}{4cm}
+\addtolength{\textheight}{0cm}
+
+\def \R{\mathbb{R}}
+
+\author{Marta Hałas 282264}
+\title{\textbf{Lista 4}}
+
+\begin{document}
+	\maketitle
+	\medskip
+	
+	
+	\section*{\textbf{Zadanie 2}}\label{Zadanie 2}
+
+	
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[width=15cm]{esaaaaaaaaaaaa.png}
+			\caption{Wykres: Porównanie czasów działania algorytmów sortowania}
+		\end{center}
+	\end{figure}
+
+	\medskip
+
+	\begin{pysub}
+	 Najwolniejszy okazał się algorytm Sortowanie bąbelkowe. Drugą najwolniejszą implementacją jest Sortowanie wybieranie,a trzecią Sortowanie wstawianie. Sortowanie scalanie jest drugim najszybszym algorytmem. Sortowanie zliczanie jest najszybszą implementacji. 
+	 
+	\medskip
+	
+	Tak zapisany algorytm jest stabilny, ponieważ elementy o tych samych kluczach mają tą samą, jak na początku kolejność. Działa on w czasie proporcjonalnym do liczby elementów w liście, dlatego że każde sortowanie zliczanie działa w czasie złożoności obliczeniowej.
+	\medskip
+		
+	\end{pysub}
+	
+	
+\end{document}
